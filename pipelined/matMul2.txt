@@ -1,0 +1,61 @@
+main: addi $sp , $sp , -6
+sw   $t5 , 5($sp)                   # t5 contains the value of m2
+sw   $t4 , 4($sp)                    # t4 contains the value of n1
+sw   $t3 , 3($sp)                    # t3 contains the value of m1
+sw   $t2 , 2($sp)                    # t2 contains address of result matrix C
+sw   $t1 , 1($sp)                     # t1 contains address of matrix B
+sw   $t0 , 0($sp) 					# t0 contains address of matrix A	
+jal matMul
+
+addi $s0 , $0 , 1
+addi $s1 , $0 , 2
+
+
+matMul:
+addi $t7 , $0 , 0				    # t7 = 0 (row counter)
+addi $t8 , $0 , 0				    # t8 = 0 (column counter)
+sw    $ra , 6($sp)
+ 
+for2: beq $t7 , $t3 , end2 	# (row == m1)?
+	
+	mult $t7 , $t4				  	# row * n1
+	mflo $t9 
+	add $t9 , $t9 , $t0			# add base address
+	add  $a0 , $0 , $t9			# pass row vector's address as argument		
+	
+	for3:
+	beq $t8 , $t5 , end3 			# (col == m2)?		
+	
+	add $t9 , $t1 , $t8             # base address + col
+	add $a1 , $0   , $t9            # pass column vector's address as argument		
+	add $a2 , $0   , $t4            # pass vector length (n1) as argument 
+    add $a3 , $0   , $t5            # pass row spacing (m2) as argument 
+	
+	jal vecMul
+	lw $t5 , 5($sp)
+
+	mult $t7 , $t5                  # row * m2 
+	mflo $t9 
+	add $t9 , $t9 , $t8
+	
+	lw $t2 , 2($sp)
+
+	add $t9 , $t9 , $t2             # add to base address of result array
+	sw   $v0 , 0($t9)
+	
+	lw $t0 , 0($sp)
+	lw $t1 , 1($sp)
+	lw $t3 , 3($sp)
+	lw $t4 , 4($sp)
+				
+	addi  $t8 , $t8 , 1		       # col++
+	j for3
+	end3:
+	addi $t8 , $0 , 0				# reset column counter (col = 0)
+	
+addi $t7 , $t7 , 1					# row++ 
+j for2										
+end2:
+lw    $ra , 6($sp)
+addi $sp , $sp , 6
+jr $ra														

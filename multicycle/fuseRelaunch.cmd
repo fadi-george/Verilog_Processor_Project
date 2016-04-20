@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Fadi G/Desktop/Dropbox/Classes/C475/C475HW2/multicycle/testLWSW_isim_beh.exe" -prj "C:/Users/Fadi G/Desktop/Dropbox/Classes/C475/C475HW2/multicycle/testLWSW_beh.prj" "work.testLWSW" "work.glbl" 

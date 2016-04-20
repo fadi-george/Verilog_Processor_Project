@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Fadi/Dropbox/Classes/C475/Project/C475_FadiG_814549301_Project/pipelined/testPipeline_isim_beh.exe" -prj "C:/Users/Fadi/Dropbox/Classes/C475/Project/C475_FadiG_814549301_Project/pipelined/testPipeline_beh.prj" "work.testPipeline" "work.glbl" 

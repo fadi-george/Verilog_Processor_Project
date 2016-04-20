@@ -1,0 +1,29 @@
+# Fadi George - Multiply Vectors
+vecMul:
+addi $t0 , $0 , 0 					# t0 = k counter = 0  
+add $t1 , $0 , $a2     			# t1 = m (vector length) 
+addi $t9 , $0 , 0				    # t7 = sum = 0
+ 
+for1:
+beq $t0 , $t1 , end1 				# (k == m)?		  
+
+	add $t2 , $0 , $a0              # a0 contains base address of first vector (builds off s0)
+	add $t2 , $t2 , $t0          # get next element in row vector 
+	lw $t3 , 0($t2)                 # fetch vector component 
+	
+	           
+	mult $t0 , $a3                   # a3 (row spacing of second vector) 
+	mflo $t4
+	add $t4 , $t4 , $a1 			# t4 = a3 + base address of second vector (builds off s1)
+	lw $t5 , 0($t4) 				# fetch vector component
+	
+	mult $t3 , $t5 					# multiplying vector components 
+	mflo $t6 
+	add $t9 , $t9 , $t6 			# sum up product of vector components
+	
+addi $t0 , $t0 , 1					# k++ 
+j for1										
+end1:
+
+add $v0 , $0 , $t9 				# sum value to return 
+jr $ra														

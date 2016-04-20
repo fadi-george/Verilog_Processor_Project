@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/Fadi/Dropbox/Classes/C475/Project/C475_FadiG_814549301_Project/pipelined/topp.xst" -ofn "C:/Users/Fadi/Dropbox/Classes/C475/Project/C475_FadiG_814549301_Project/pipelined/topp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 topp.ngc topp.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o topp_map.ncd topp.ngd topp.pcf 

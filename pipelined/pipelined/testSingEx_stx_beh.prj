@@ -1,0 +1,3 @@
+verilog isim_temp "signEx.v"
+verilog isim_temp "testSingEx.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

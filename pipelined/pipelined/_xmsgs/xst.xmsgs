@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1670" delta="new" >"C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\instructmem.v" Line 20: Signal &lt;<arg fmt="%s" index="1">MEM</arg>&gt; in initial block is partially initialized.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1670" delta="new" >"C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\dataMemory.v" Line 21: Signal &lt;<arg fmt="%s" index="1">dMEM</arg>&gt; in initial block is partially initialized.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\HazardUnit.v" Line 52: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\HazardUnit.v" Line 53: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\HazardUnit.v" Line 55: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\HazardUnit.v" Line 56: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">42</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">MU1</arg>&gt; of block &lt;<arg fmt="%s" index="4">mux2to1</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">43</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">MU9</arg>&gt; of block &lt;<arg fmt="%s" index="4">mux2to1</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">44</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">MU10</arg>&gt; of block &lt;<arg fmt="%s" index="4">mux2to1</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">46</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">UUU</arg>&gt; of block &lt;<arg fmt="%s" index="4">PC</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">47</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">AA1</arg>&gt; of block &lt;<arg fmt="%s" index="4">add2</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">49</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">UU2</arg>&gt; of block &lt;<arg fmt="%s" index="4">iMem</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">50</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">PP1</arg>&gt; of block &lt;<arg fmt="%s" index="4">DecodeReg</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">UU3</arg>&gt; of block &lt;<arg fmt="%s" index="4">rFile</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">60</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">MU2</arg>&gt; of block &lt;<arg fmt="%s" index="4">mux2to1</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">61</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">MU3</arg>&gt; of block &lt;<arg fmt="%s" index="4">mux2to1</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">62</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">HU2</arg>&gt; of block &lt;<arg fmt="%s" index="4">Compar</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">65</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">UU4</arg>&gt; of block &lt;<arg fmt="%s" index="4">signExtend</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">66</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">AU2</arg>&gt; of block &lt;<arg fmt="%s" index="4">add2</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">67</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">PP2</arg>&gt; of block &lt;<arg fmt="%s" index="4">ExecuteReg</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">76</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">MU4</arg>&gt; of block &lt;<arg fmt="%s" index="4">mux3to1</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">77</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">MU5</arg>&gt; of block &lt;<arg fmt="%s" index="4">mux3to1</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">78</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">MU6</arg>&gt; of block &lt;<arg fmt="%s" index="4">mux3to1</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">79</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">MU7</arg>&gt; of block &lt;<arg fmt="%s" index="4">mux2to1</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">80</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">UU5</arg>&gt; of block &lt;<arg fmt="%s" index="4">ALU</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">81</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">PP3</arg>&gt; of block &lt;<arg fmt="%s" index="4">MemoryReg</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">90</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">UU6</arg>&gt; of block &lt;<arg fmt="%s" index="4">dMem</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">91</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">PP4</arg>&gt; of block &lt;<arg fmt="%s" index="4">WriteBackReg</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">100</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">MU8</arg>&gt; of block &lt;<arg fmt="%s" index="4">mux3to1</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">109</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">CU1</arg>&gt; of block &lt;<arg fmt="%s" index="4">ALUMainDec</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">110</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">CU2</arg>&gt; of block &lt;<arg fmt="%s" index="4">ALUDec</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">111</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">CS1</arg>&gt; of block &lt;<arg fmt="%s" index="4">ControlE</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">112</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">CS2</arg>&gt; of block &lt;<arg fmt="%s" index="4">ControlM</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">113</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">CS3</arg>&gt; of block &lt;<arg fmt="%s" index="4">ControlW</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v</arg>&quot; line <arg fmt="%d" index="2">121</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">HU1</arg>&gt; of block &lt;<arg fmt="%s" index="4">HazardUnit</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">topp</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">RST</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+</messages>
+

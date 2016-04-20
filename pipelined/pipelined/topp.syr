@@ -1,0 +1,381 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: topp.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "topp.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "topp"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : topp
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\WriteBackReg.v" into library work
+Parsing module <WriteBackReg>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\signEx.v" into library work
+Parsing module <signExtend>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\registerFile.v" into library work
+Parsing module <rFile>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\pcplus1.v" into library work
+Parsing module <add2>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\PCC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\mux3to1.v" into library work
+Parsing module <mux3to1>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\mux2to1.v" into library work
+Parsing module <mux2to1>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\MemoryReg.v" into library work
+Parsing module <MemoryReg>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\isEqual.v" into library work
+Parsing module <Compar>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\instructmem.v" into library work
+Parsing module <iMem>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\iMemReg.v" into library work
+Parsing module <DecodeReg>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\HazardUnit.v" into library work
+Parsing module <HazardUnit>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\ExecuteReg.v" into library work
+Parsing module <ExecuteReg>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\dataMemory.v" into library work
+Parsing module <dMem>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\ControlW.v" into library work
+Parsing module <ControlW>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\ControlM.v" into library work
+Parsing module <ControlM>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\ControlE.v" into library work
+Parsing module <ControlE>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\ALUMainDec.v" into library work
+Parsing module <ALUMainDec>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\ALUDec.v" into library work
+Parsing module <ALUDec>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" into library work
+Parsing module <topp>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <topp>.
+
+Elaborating module <mux2to1(N=32)>.
+
+Elaborating module <PC(W=32)>.
+
+Elaborating module <add2(N=32)>.
+
+Elaborating module <iMem(addWidth=5,dataWidth=32)>.
+Reading initialization file \"instMem.dat\".
+WARNING:HDLCompiler:1670 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\instructmem.v" Line 20: Signal <MEM> in initial block is partially initialized.
+
+Elaborating module <DecodeReg(M=32,N=32)>.
+
+Elaborating module <rFile(addWidth=5,dataWidth=32)>.
+Reading initialization file \"regMem.dat\".
+
+Elaborating module <Compar(M=32)>.
+
+Elaborating module <signExtend(Ex=16,Imm=32)>.
+
+Elaborating module <ExecuteReg(M=32,N=5)>.
+
+Elaborating module <mux3to1(N=5)>.
+
+Elaborating module <mux3to1(N=32)>.
+
+Elaborating module <ALU(W=32,A=5)>.
+
+Elaborating module <MemoryReg(M=32,N=5)>.
+
+Elaborating module <dMem(dataWidth=32,N=55)>.
+Reading initialization file \"dataMem.dat\".
+WARNING:HDLCompiler:1670 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\dataMemory.v" Line 21: Signal <dMEM> in initial block is partially initialized.
+
+Elaborating module <WriteBackReg(M=32,N=5)>.
+
+Elaborating module <ALUMainDec>.
+
+Elaborating module <ALUDec>.
+
+Elaborating module <ControlE>.
+
+Elaborating module <ControlM>.
+
+Elaborating module <ControlW>.
+
+Elaborating module <HazardUnit>.
+WARNING:HDLCompiler:413 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\HazardUnit.v" Line 52: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\HazardUnit.v" Line 53: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\HazardUnit.v" Line 55: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\HazardUnit.v" Line 56: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 42. All outputs of instance <MU1> of block <mux2to1> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 43. All outputs of instance <MU9> of block <mux2to1> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 44. All outputs of instance <MU10> of block <mux2to1> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 46. All outputs of instance <UUU> of block <PC> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 47. All outputs of instance <AA1> of block <add2> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 49. All outputs of instance <UU2> of block <iMem> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 50. All outputs of instance <PP1> of block <DecodeReg> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 59. All outputs of instance <UU3> of block <rFile> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 60. All outputs of instance <MU2> of block <mux2to1> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 61. All outputs of instance <MU3> of block <mux2to1> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 62. All outputs of instance <HU2> of block <Compar> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 65. All outputs of instance <UU4> of block <signExtend> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 66. All outputs of instance <AU2> of block <add2> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 67. All outputs of instance <PP2> of block <ExecuteReg> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 76. All outputs of instance <MU4> of block <mux3to1> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 77. All outputs of instance <MU5> of block <mux3to1> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 78. All outputs of instance <MU6> of block <mux3to1> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 79. All outputs of instance <MU7> of block <mux2to1> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 80. All outputs of instance <UU5> of block <ALU> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 81. All outputs of instance <PP3> of block <MemoryReg> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 90. All outputs of instance <UU6> of block <dMem> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 91. All outputs of instance <PP4> of block <WriteBackReg> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 100. All outputs of instance <MU8> of block <mux3to1> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 109. All outputs of instance <CU1> of block <ALUMainDec> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 110. All outputs of instance <CU2> of block <ALUDec> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 111. All outputs of instance <CS1> of block <ControlE> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 112. All outputs of instance <CS2> of block <ControlM> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 113. All outputs of instance <CS3> of block <ControlW> are unconnected in block <topp>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v" line 121. All outputs of instance <HU1> of block <HazardUnit> are unconnected in block <topp>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <topp>.
+    Related source file is "C:\Users\Fadi\Dropbox\Classes\C475\Project\C475_FadiG_814549301_Project\pipelined\topp.v".
+        N = 5
+        M = 32
+WARNING:Xst:647 - Input <RST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <topp> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <topp> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block topp, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : topp.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           2
+ Number of bonded IOBs:                   0  out of    102     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.07 secs
+ 
+--> 
+
+Total memory usage is 299092 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   36 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
